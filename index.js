@@ -11,7 +11,7 @@ var backendDefaults = {
 };
 
 function Backend(opts) {
-  this.opts = opts;
+  this.opts = _.merge({}, backendDefaults, opts || {});
 };
 
 Backend.prototype.add = function (transactions, bucket, key, values) {
@@ -159,7 +159,6 @@ Backend.prototype.union = function (bucket, keys, done) {
   });
 };
 
-module.exports = function (options, callback) {
-  var opts = _.merge({}, backendDefaults, options || {});
-  callback(null, new Backend(opts));
+module.exports = function (opts) {
+  return new Backend(opts);
 };
