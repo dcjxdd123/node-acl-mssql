@@ -19,7 +19,7 @@ Usage
       password: '...',
       server: 'localhost',
       database: '...'
-    )});
+    }));
 
     acl.allow('guest', 'blogs', 'view');
     acl.allow('member', 'blogs', ['edit', 'view', 'delete']);
