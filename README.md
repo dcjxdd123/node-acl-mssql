@@ -1,8 +1,7 @@
-ACL MSSQL Backend
-=================
+node acl mssql backend
+======================
 
-MSSQL backend for node [acl](https://github.com/OptimalBits/node_acl).  
-Refer to node [mssql](https://www.npmjs.com/package/mssql) for connection options.
+A mssql [node_acl](https://github.com/OptimalBits/node_acl) backend. Refer to [node mssql](https://www.npmjs.com/package/mssql) for connection options.
 
 Installation
 ------------
